@@ -25,7 +25,7 @@ function createPlayer(character_name, category)
 			print(self.name .. " attacks " .. target.name .. " for " .. damage .. " damage!")
 		end,
 		status = function(self)
-		    local hp = math.max(0, self.health)   -- never show below 0
+		    local hp = math.max(0, self.health)
 		    print(self.name .. " has " .. hp .. " HP")
 		end
 	}
@@ -42,7 +42,7 @@ function createEnemy(enemy_name)
 			print(self.name .. " attacks " .. target.name .. " for " .. damage .. " damage!")
 		end,
 	status = function(self)
-	    local hp = math.max(0, self.health)   -- never show below 0
+	    local hp = math.max(0, self.health)
 	    print(self.name .. " has " .. hp .. " HP")
 	end
 	}
